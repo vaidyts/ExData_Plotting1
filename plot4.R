@@ -7,7 +7,7 @@ tbl <- tbl[(tbl$Date>="2007-02-01" &  tbl$Date<="2007-02-02"),]
 
 png("plot4.png",width=480,height=480,bg="white")
 par(mfcol=c(2,2))
-plot(tbl$Time,tbl$Global_active_power,xlab="",ylab="Global Active Power (kilowatts)",type="l")
+plot(tbl$Time,tbl$Global_active_power,xlab="",ylab="Global Active Power",type="l")
 
 plot(tbl$Time,tbl$Global_active_power, xlab="", ylab="Energy sub metering", type="n",ylim=range(tbl$Sub_metering_1))
 lines(tbl$Time,tbl$Sub_metering_1,col="black",type="l")
